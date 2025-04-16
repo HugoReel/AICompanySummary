@@ -1,0 +1,5 @@
+Django~=5.2
+google~=3.0.0
+duckduckgo_search~=8.0.0
+dotenv~=0.9.9
+python-dotenv~=1.1.0
