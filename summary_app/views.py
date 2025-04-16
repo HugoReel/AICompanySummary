@@ -42,7 +42,7 @@ def summarise_text_with_gemini(snippets, company_name):
         return response.text if hasattr(response, "text") else "No summary text was generated."
     except Exception as e:
         # Handle API or generation errors
-        print(f"Error during summarization: {e}")
+        print(f"Error during summarisation: {e}")
         return f"There was an error generating the summary: {str(e)}"
 
 
@@ -61,5 +61,4 @@ def company_input(request):
         else:
             overview = "No relevant search results found."
 
-    # Render the homepage with the summary (if available)
     return render(request, "homepage.html", {"overview": overview})
